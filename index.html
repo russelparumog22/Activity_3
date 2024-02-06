@@ -3,17 +3,25 @@
 <head>
     
     <title>Login</title>
-    <script>
-        console.log("Hello World");
-    </script>
+    
 </head>
-<body>html
+<body>
     <div style="text-align: center;">
     <h1>Login</h1>
-    <input type="text" placeholder="Username" id="txtusername">
-    <input type="text" placeholder="Password" id="txtpassword">
+    <input type="text" placeholder="Username" id="txtUsername">
+    <input type="text" placeholder="Password" id="txtPassword">
     <div style="margin-top: 1rem;">
-        <button id="btnlogin" onclick="alert ('Login successfully.')">Login</button>
+        <button id="btnlogin">Login</button>
     </div>
 </body>
+
+<script>
+    console.log("Hello World");
+    let buttonLogin = document.querySelector("#btnlogin");
+    buttonLogin.onclick = function() 
+    {
+        alert("Login Successfully.")
+
+    };
+</script>
 </html>
