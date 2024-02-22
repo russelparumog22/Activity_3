@@ -3,15 +3,42 @@
 <head>
     
     <title>Login</title>
+    <style>
+        #divContainer {
+            text-align: center;
+        }
+        .redText {
+            color: red;
+            background-color:center;
+        }
+
+        input {
+            text-align: right;
+        }
+
+        .redText:hover {
+            color: blue;
+        }
+        #btnLogin {
+            font-size: large;
+            color: brown;
+        }
+        #btnLogin:hover {
+            cursor: pointer;
+            font-size: x-large;
+            color: red;
+
+        }
+    </style>
     
 </head>
 <body>
-    <div style="text-align: center;">
+    <div style="text-align: center;" id="divContainer">
     <h1>Login</h1>
-    <input type="text" placeholder="Username" id="txtUsername">
-    <input type="text" placeholder="Password" id="txtPassword">
+    <input type="text" placeholder="Username" id="txtUsername" class="redText">
+    <input type="text" placeholder="Password" id="txtPassword" class="redText">
     <div style="margin-top: 1rem;">
-        <button id="btnlogin">Login</button>
+        <button id="btnLogin">Login</button>
     </div>
 </body>
 
